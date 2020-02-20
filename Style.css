@@ -1,0 +1,82 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+section:after{
+  content:"";
+  display:table;
+  clear: both;
+}
+/* DEBUG:  */
+header , footer{
+  height: 300px;
+  background-color: red;
+  margin-bottom: 50px;
+}
+article:after{
+  content:"";
+  display:table;
+  clear: both;
+  /* DEBUG:  */
+  margin-bottom: 50px;
+}
+.size{
+  max-width: 1250px;
+  margin: auto;
+}
+/* -------------GENERALI------------ */
+/* -------------Sezione  1------------ */
+#concept>img{
+  width: 260px;
+}
+#concept{
+  text-align: center;
+}
+.feature img{
+  max-height: 150px;
+}
+
+.feature p, .feature ul{
+  text-align: left;
+}
+.feature:first-child{
+  width: 100%;
+  float: none;
+  text-align: left;
+}
+.feature{
+  width: calc(33.333% - 2vw);
+  background-color: blue;
+  float: left;
+  /* height: 200px; */
+  text-align: center;
+}
+.feature:nth-child(3){
+  margin: 0 3vw;
+}
+.leftside {
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+/* -----------Sezione 2------------ */
+#aftermath{
+height: 300px;
+background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+}
+.aftersect{
+  text-align: center;
+}
+.quad{
+  width: 25%;
+  float: left;
+  text-align: center;
+  border-right: 1px white solid;
+}
+.quad:nth-child(4n+4){
+  border-right:none;
+}
+.quad2{
+  border-top: 1px white solid;
+}
