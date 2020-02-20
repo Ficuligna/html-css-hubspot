@@ -1,31 +1,118 @@
+
+/* ------------GENERALI------------- */
+
 *{
   padding:0;
   margin:0;
   box-sizing: border-box;
 }
-section:after{
-  content:"";
-  display:table;
-  clear: both;
-}
-/* DEBUG:  */
-header , footer{
-  height: 300px;
-  background-color: red;
-  margin-bottom: 50px;
-}
-article:after{
+
+nav:after, section:after, article:after, #fixedbar:after, footer:after{
   content:"";
   display:table;
   clear: both;
   /* DEBUG:  */
   margin-bottom: 50px;
 }
+
+
+
 .size{
   max-width: 1250px;
   margin: auto;
 }
-/* -------------GENERALI------------ */
+.Get{
+  background-color: #ff7a59;
+  border-radius: 4px;
+  text-align: center;
+  height: 40px;
+  text-decoration:none;
+  color: white;
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 10px 5px;
+}
+/* --------------HEADER----------------- */
+/* -------------- FIXEDBAR------------- */
+#mutendinalang a:nth-child(1n+2){
+  display: none;
+}
+#mutendinalang , #Contact{
+  float:left;
+}
+#fixedbar .size> *:nth-child(1n+3){
+  float:right;
+}
+.Get~a{
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  height: 40px;
+  text-decoration:none;
+  color: #ff7a59;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ff7a59;
+}
+#fixedbar input{
+  margin: 10px 5px 0 0;
+  border-radius: 4px;
+  height: 30px;
+  display: inline-block;
+  padding: 0px 20px;
+  border: 1px solid lightblue;
+  box-shadow: 2px 2px lightblue;
+}
+/* -------------NAV BAR-------------- */
+#logosup{
+  float: left;
+}
+#menunavbar{
+  float:right;
+  width: 50%;
+}
+#menunavbar>ul li{
+  float: left;
+  padding: 0 5%;
+  list-style-type: none;
+}
+#menunavbar:after{
+  content:"";
+  display:table;
+  clear: both;
+}
+/* -----------JUMBOJAMBO------------- */
+/* DEBUG: ATTENZION!!! SO CHE NON VA FATTO MA LO FACCIO */
+#JumboJambo{
+  position: relative;
+  height: 740px;
+  background-color: rgb(255 243 238);
+
+}
+#JumboJambo>div{
+  height: 100%;
+  position: relative;
+}
+#casette{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+}
+#JumboJambo>#strisciaverderdimmerda{
+  position: absolute;
+  bottom: 0;
+  height: 6vw;
+  width: 100%;
+  max-height: 80px;
+  background-color: rgb(0 181 157);
+}
+#Growing_text{
+  position: absolute;
+  width: 40%;
+  left: 0;
+  top: 5%;
+}
 /* -------------Sezione  1------------ */
 #concept>img{
   width: 260px;
@@ -47,9 +134,7 @@ article:after{
 }
 .feature{
   width: calc(33.333% - 2vw);
-  background-color: blue;
   float: left;
-  /* height: 200px; */
   text-align: center;
 }
 .feature:nth-child(3){
@@ -62,8 +147,8 @@ article:after{
 }
 /* -----------Sezione 2------------ */
 #aftermath{
-height: 300px;
-background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+  height: 300px;
+  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
 }
 .aftersect{
   text-align: center;
@@ -79,4 +164,84 @@ background-image: linear-gradient(45deg, #00a4bd, #00bda5);
 }
 .quad2{
   border-top: 1px white solid;
+}
+/*---------------Sezione 3---------------- */
+#startproject>div>div{
+  float: left;
+}
+#results, #testimonial{
+  width: 40%;
+}
+#partners, #ouroffer{
+  width: 60%;
+}
+#testimonial img{
+  width: 350px;
+}
+#result>*{
+
+}
+#partners img{
+  vertical-align: baseline;
+  width: 110px;
+  float: left;
+  padding: 20px;
+}
+/*----------------Footer-------------  */
+
+footer{
+  background-color: #33475b;
+}
+#Nonlosofooterdiv ul{
+  float: left;
+  width: 23%;
+}
+#Nonlosofooterdiv ul:nth-child(2n+1){
+  margin: 0 2%;
+}
+#Nonlosofooterdiv:after{
+  content: "";
+  display: table;
+  clear: both;
+  /* DEBUG:  */
+  margin-bottom: 50px;
+}
+#contactandsupport a{
+  margin: 1.5%;
+}
+#contactandsupport>a:first-child{
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+#contactandsupport{
+  float: right;
+  width: 200px;
+}
+.hrdemmerda:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.aaaaa{
+  margin:auto;
+}
+.hrdemmerda~ul{
+  text-align: center;
+}
+.hrdemmerda~ul>li{
+
+  display: inline-block;
+}
+/* -------------Credits------------- */
+.piede{
+  width: 50%;
+  float: left;
+}
+.piede span{
+  display: block;
+}
+.piede a{
+  margin-top: 20px;
+  float: right;
 }
