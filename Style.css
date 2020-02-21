@@ -2,24 +2,27 @@
 /* ------------GENERALI------------- */
 
 *{
+  font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
   padding:0;
   margin:0;
   box-sizing: border-box;
+  font-size: 20px;
 }
-
-nav:after, section:after, article:after, #fixedbar:after, footer:after{
+body{
+  background-color: #f5f8fa;
+}
+.size:after, nav:after, section:after, article:after, #fixedbar:after, footer:after{
   content:"";
   display:table;
   clear: both;
   /* DEBUG:  */
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
-
-
 
 .size{
   max-width: 1250px;
   margin: auto;
+  padding: 50px 50px;
 }
 .Get{
   background-color: #ff7a59;
@@ -32,8 +35,48 @@ nav:after, section:after, article:after, #fixedbar:after, footer:after{
   vertical-align: baseline;
   padding: 10px 5px;
 }
+.titles h2{
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.titles p{
+  font-weight: 550;
+  line-height: 1.7;
+  margin-bottom: 60px;
+}
+.titles{
+  width: 80%;
+  margin: auto;
+}
 /* --------------HEADER----------------- */
 /* -------------- FIXEDBAR------------- */
+#fixedbar{
+  background-color: #f5f8fa;
+  position: fixed;
+  top:0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 50;
+  height: 140px;
+  width: 100%;
+}
+
+#fixedbar .size{
+  width: 100vw;
+  max-width: 1250px;
+}
+#fixedbar .size>*{
+  margin-right: 30px;
+}
+#fixedbar .size #mutendinalang a:first-child, #fixedbar .size>*:nth-child(2){
+  color: #33475b;
+  text-decoration: none;
+}
+#fixedbar .size #mutendinalang a:first-child{
+  border-right: 1px solid #33475b;
+  padding-right: 30px;
+}
 #mutendinalang a:nth-child(1n+2){
   display: none;
 }
@@ -64,6 +107,10 @@ nav:after, section:after, article:after, #fixedbar:after, footer:after{
   box-shadow: 2px 2px lightblue;
 }
 /* -------------NAV BAR-------------- */
+nav{
+  background-color: white;
+  margin-top: 140px;
+}
 #logosup{
   float: left;
 }
@@ -73,7 +120,7 @@ nav:after, section:after, article:after, #fixedbar:after, footer:after{
 }
 #menunavbar>ul li{
   float: left;
-  padding: 0 5%;
+  padding: 0 2%;
   list-style-type: none;
 }
 #menunavbar:after{
@@ -112,52 +159,114 @@ nav:after, section:after, article:after, #fixedbar:after, footer:after{
   width: 40%;
   left: 0;
   top: 5%;
+  color: #33475b;
 }
-/* -------------Sezione  1------------ */
+#Growing_text h1{
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+#Growing_text .Get{
+  padding: 20px 10px;
+  margin: 20px 0;
+  height: 60px;
+}
+#Growing_text h6{
+  font-size: 14px;
+  font-weight: 200;
+}
+/* -------------Sezione  CONCEPT------------ */
 #concept>img{
   width: 260px;
 }
 #concept{
   text-align: center;
 }
+
 .feature img{
   max-height: 150px;
 }
-
+/* ho vorrei mettere il simbolino con before ma non riesco */
+/* #conc li:before{
+  content: "";
+} */
 .feature p, .feature ul{
   text-align: left;
+  list-style-type: none;
+  font-size: 14px;
+  margin: 20px 0;
 }
 .feature:first-child{
   width: 100%;
   float: none;
   text-align: left;
 }
+.feature li{
+  font-size: 14px;
+}
+.feature:first-child ul li{
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 14px;
+}
 .feature{
+  margin-top:3vw;
+  padding: 40px;
+  background-color: white;
   width: calc(33.333% - 2vw);
   float: left;
   text-align: center;
 }
 .feature:nth-child(3){
-  margin: 0 3vw;
+  margin: 3vw 3vw 0;
 }
 .leftside {
   float: left;
   width: 30%;
   text-align: center;
 }
-/* -----------Sezione 2------------ */
+.first h6{
+  float: left;
+}
+.feature h6{
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.first{
+  height: 100%;
+  width: 70%;
+  float: right;
+}
+.feature hr{
+  margin-top: 40px;
+}
+.feature ul{
+  clear: both;
+}
+/* -----------Sezione GRIGLIA------------ */
 #aftermath{
-  height: 300px;
   background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+  color: white;
 }
 .aftersect{
   text-align: center;
 }
 .quad{
   width: 25%;
+  height: 255px;
   float: left;
+  padding: 40px;
   text-align: center;
   border-right: 1px white solid;
+}
+.quad h2{
+  font-size: 60px;
+}
+.quad h2:after{
+  content: "+";
+  font-size: 0.3em;
+  vertical-align: middle;
+
 }
 .quad:nth-child(4n+4){
   border-right:none;
@@ -165,7 +274,7 @@ nav:after, section:after, article:after, #fixedbar:after, footer:after{
 .quad2{
   border-top: 1px white solid;
 }
-/*---------------Sezione 3---------------- */
+/*---------------Sezione STARTPROJECT---------------- */
 #startproject>div>div{
   float: left;
 }
@@ -175,27 +284,65 @@ nav:after, section:after, article:after, #fixedbar:after, footer:after{
 #partners, #ouroffer{
   width: 60%;
 }
+#ouroffer{
+  padding-right: 150px;
+}
+#partners{
+  padding: 0 2% 100px;
+}
 #testimonial img{
+  float: right;
   width: 350px;
 }
-#result>*{
-
+#results{
+  padding: 0 5% 0 0;
+}
+#results h2{
+  font-size: 45px;
+}
+#results span{
+  font-weight: 800;
+}
+#results p{
+  letter-spacing: 2px;
+  line-height: 2;
 }
 #partners img{
   vertical-align: baseline;
-  width: 110px;
+  width: 150px;
   float: left;
   padding: 20px;
+}
+#ouroffer *{
+  margin-top: 20px;
+}
+#ouroffer h6{
+  font-size: 14px;
+  font-weight: 300;
 }
 /*----------------Footer-------------  */
 
 footer{
+  color: white;
   background-color: #33475b;
+}
+footer a{
+  text-decoration:none;
+  color: white;
 }
 #Nonlosofooterdiv ul{
   float: left;
   width: 23%;
+  list-style-type: none;
+  line-height: 2;
+
 }
+#Nonlosofooterdiv h5{
+  line-height: 1;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
 #Nonlosofooterdiv ul:nth-child(2n+1){
   margin: 0 2%;
 }
@@ -210,13 +357,23 @@ footer{
   margin: 1.5%;
 }
 #contactandsupport>a:first-child{
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  /* height: 40px; */
+  color: #33475b;;
+  vertical-align: baseline;
+  padding: 10px 5px;
   display: block;
-  padding: 0;
-  margin: 0;
+  font-size: 14px;
 }
 #contactandsupport{
+  margin-right: 60px;
   float: right;
   width: 200px;
+}
+#lingue{
+  margin-bottom: 30px;
 }
 .hrdemmerda:after{
   content: "";
@@ -233,15 +390,17 @@ footer{
 
   display: inline-block;
 }
+
 /* -------------Credits------------- */
 .piede{
   width: 50%;
   float: left;
+  margin-top: 30px;
 }
 .piede span{
   display: block;
 }
 .piede a{
-  margin-top: 20px;
+  margin: 20px 20px 0 0;
   float: right;
 }
