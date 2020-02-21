@@ -11,7 +11,7 @@
 body{
   background-color: #f5f8fa;
 }
-.size:after, nav:after, section:after, article:after, #fixedbar:after, footer:after{
+.fixd:after, .size:after, nav:after, section:after, article:after, #fixedbar:after, footer:after{
   content:"";
   display:table;
   clear: both;
@@ -28,20 +28,24 @@ body{
   background-color: #ff7a59;
   border-radius: 4px;
   text-align: center;
-  height: 40px;
+  height: 60px;
   text-decoration:none;
   color: white;
   display: inline-block;
-  vertical-align: baseline;
-  padding: 10px 5px;
+  vertical-align: top;
+  padding: 25px 20px;
+  font-size: 14px;
+  font-weight: 600;
 }
+
+
 .titles h2{
   font-size: 40px;
   line-height: 1.2;
   margin-bottom: 30px;
 }
 .titles p{
-  font-weight: 550;
+  font-weight: 200;
   line-height: 1.7;
   margin-bottom: 60px;
 }
@@ -51,6 +55,7 @@ body{
 }
 /* --------------HEADER----------------- */
 /* -------------- FIXEDBAR------------- */
+
 #fixedbar{
   background-color: #f5f8fa;
   position: fixed;
@@ -58,18 +63,23 @@ body{
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: 50;
-  height: 140px;
+  height: 100px;
   width: 100%;
 }
 
 #fixedbar .size{
+  padding: 20px 50px;
   width: 100vw;
   max-width: 1250px;
 }
 #fixedbar .size>*{
   margin-right: 30px;
 }
+#mutendinalang{
+  margin-top: 15px;
+}
 #fixedbar .size #mutendinalang a:first-child, #fixedbar .size>*:nth-child(2){
+  margin-top: 15px;
   color: #33475b;
   text-decoration: none;
 }
@@ -90,11 +100,11 @@ body{
   background-color: #fff;
   border-radius: 4px;
   text-align: center;
-  height: 40px;
+  height: 60px;
   text-decoration:none;
   color: #ff7a59;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 20px 20px;
   border: 1px solid #ff7a59;
 }
 #fixedbar input{
@@ -109,7 +119,8 @@ body{
 /* -------------NAV BAR-------------- */
 nav{
   background-color: white;
-  margin-top: 140px;
+  margin-top: 100px;
+
 }
 #logosup{
   float: left;
@@ -142,9 +153,9 @@ nav{
 }
 #casette{
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 80%;
+  bottom: 0px;
+  right: 50px;
+  width: 70%;
 }
 #JumboJambo>#strisciaverderdimmerda{
   position: absolute;
@@ -157,7 +168,7 @@ nav{
 #Growing_text{
   position: absolute;
   width: 40%;
-  left: 0;
+  left: 50px;
   top: 5%;
   color: #33475b;
 }
@@ -175,6 +186,10 @@ nav{
   font-weight: 200;
 }
 /* -------------Sezione  CONCEPT------------ */
+.fa-check-square{
+  color: #ff7a59;
+  border-radius: 999px;
+}
 #concept>img{
   width: 260px;
 }
@@ -185,7 +200,7 @@ nav{
 .feature img{
   max-height: 150px;
 }
-/* ho vorrei mettere il simbolino con before ma non riesco */
+/*  vorrei mettere il simbolino con before ma non riesco */
 /* #conc li:before{
   content: "";
 } */
@@ -244,6 +259,11 @@ nav{
   clear: both;
 }
 /* -----------Sezione GRIGLIA------------ */
+#grid:after{
+  content: "";
+  display: table;
+  clear: both;
+}
 #aftermath{
   background-image: linear-gradient(45deg, #00a4bd, #00bda5);
   color: white;
@@ -275,7 +295,8 @@ nav{
   border-top: 1px white solid;
 }
 /*---------------Sezione STARTPROJECT---------------- */
-#startproject>div>div{
+
+#startproject>div div{
   float: left;
 }
 #results, #testimonial{
