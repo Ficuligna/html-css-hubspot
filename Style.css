@@ -59,6 +59,7 @@ body{
 /* --------------HEADER----------------- */
 /* -------------- FIXEDBAR------------- */
 
+
 #fixedbar{
   background-color: #f5f8fa;
   position: fixed;
@@ -141,10 +142,67 @@ body{
   margin: 10px 5px 0 0;
   border-radius: 4px;
   height: 30px;
-  display: inline-block;
   padding: 0px 20px;
   border: 1px solid lightblue;
   box-shadow: 2px 2px lightblue;
+}
+.fa-search{
+  color:blue;
+  margin-top: 15px;
+  transition: 1s;
+}
+.fa-search:hover{
+  cursor: pointer;
+}
+/* ----------non riesco a dare il focus alla lente------------ */
+/* i input{
+  display: none;
+}
+i:focus input{
+  display: inline-block;
+} */
+/* -----------FIXEDCHAT----------- */
+
+#fixedchat{
+  position: fixed;
+  bottom: 10vh;
+  right: 2vw;
+  transform: translate(-0, 0);
+  width: 0;
+  z-index: 100;
+  transition: 1s;
+  background-color: none;
+  height: 0;
+  cursor: pointer;
+}
+#fixedchat img{
+  width: 6vw;
+  transition: 1s;
+  transform: translate(-100%, -70%);
+}
+#fixedchat img:hover{
+  transform: translate(-100% , -100%);
+  width: 12vw;
+
+}
+#chat{
+  background-color: none;
+  width: 12vw;
+  height: 20vw;
+  position: absolute;
+  display: none;
+}
+#chat p{
+  font-size: 1vw;
+}
+#fixedchat:focus img{
+  width: 12vw;
+}
+#fixedchat:focus #chat{
+  display: block;
+  position: absolute;
+  top: calc(-20vw - 13vw);
+  left: calc(-12vw );
 }
 /* -------------NAV BAR-------------- */
 nav{
@@ -214,7 +272,7 @@ nav>.size{
   color: #33475b;
   text-decoration: none;
 }
-.row>a{
+.row>*{
   width: 33.33%;
   float: left;
   width: 33.33%;
@@ -290,8 +348,18 @@ nav>.size{
   font-size: 20px;
   height: 25px;
 }
-.mutendinav_bar .row p{
+
+.row ul li a{
+  color: #33475b;
+  font-size: 14px;
   line-height: 3;
+  text-decoration: none;
+}
+.mutendinav_bar .row div{
+  cursor: default;
+}
+.row ul li a:hover{
+  background-color: lightblue;
 }
 /* -----------JUMBOJAMBO------------- */
 /* DEBUG: ATTENZION!!! SO CHE NON VA FATTO MA LO FACCIO */
@@ -412,6 +480,13 @@ nav>.size{
 }
 .feature ul{
   clear: both;
+}
+article{
+  transition: 1s;
+}
+article:hover{
+  box-shadow: 10px 10px #e6e6e6;
+  transform: translate(5%, -5%);
 }
 /* -----------Sezione GRIGLIA------------ */
 #grid:after{
