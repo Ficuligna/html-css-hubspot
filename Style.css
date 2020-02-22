@@ -188,11 +188,13 @@ i:focus input{
 #chat{
   background-color: none;
   height: 20vw;
-  position: absolute;
   display: none;
   overflow: hidden;
+  max-height: 35vh;
+
 }
 #chat p{
+  width: 12vw;
   font-size: 75%;
 }
 #fixedchat:focus img{
@@ -201,7 +203,7 @@ i:focus input{
 #fixedchat:focus #chat{
   display: block;
   position: absolute;
-  top: calc(-20vw - 13vw);
+  top: -60vh;
   left: calc(-12vw );
 }
 /* -------------NAV BAR-------------- */
