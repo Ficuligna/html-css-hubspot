@@ -187,13 +187,13 @@ i:focus input{
 }
 #chat{
   background-color: none;
-  width: 12vw;
   height: 20vw;
   position: absolute;
   display: none;
+  overflow: hidden;
 }
 #chat p{
-  font-size: 1vw;
+  font-size: 75%;
 }
 #fixedchat:focus img{
   width: 12vw;
@@ -359,6 +359,9 @@ nav>.size{
   cursor: default;
 }
 .row ul li a:hover{
+  background-color: lightblue;
+}
+.row_2 a:hover{
   background-color: lightblue;
 }
 /* -----------JUMBOJAMBO------------- */
