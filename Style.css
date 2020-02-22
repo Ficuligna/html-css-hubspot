@@ -546,7 +546,7 @@ article:hover{
   width: 350px;
 }
 #results{
-  padding: 0 5% 0 0;
+  padding: 0 5% 100px 0;
 }
 #results h2{
   font-size: 45px;
@@ -654,4 +654,185 @@ footer a{
 .piede a{
   margin: 20px 20px 0 0;
   float: right;
+}
+/* ----------------Responsive---------------- */
+#partners .hamburgermenu {
+  margin-left: 40%;;
+}
+#casetta{
+  display: none;
+}
+.Hambmenu{
+  display: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  background-color: white;
+}
+.Get_hidden{
+  display: none;
+  background-color: #ff7a59;
+  border-radius: 4px;
+  text-align: center;
+  height: 60px;
+  text-decoration: none;
+  color: white;
+  vertical-align: top;
+  padding: 25px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 1s;
+  width: 200px;
+  margin: auto;
+
+}
+@media only screen and (max-width: 1205px){
+  .mutendinav{
+    display: none;
+  }
+  .Hambmenu{
+    display: block;
+    margin: auto;
+  }
+
+  .partnr{
+    display: none;
+  }
+  #contactandsupport{
+    display: none;
+  }
+  footer .Hambmenu{
+    margin: none;
+    float: right;
+  }
+  footer .Hambmenu:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+}
+@media only screen and (max-width: 1070px){
+  .fa-search input{
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px){
+  .quad{
+    padding: 1%;
+
+  }
+  #Nonlosofooterdiv ul{
+    line-height: normal;
+  }
+  #Nonlosofooterdiv ul li a{
+    font-size: 12px;
+  }
+  #Nonlosofooterdiv ul li h5{
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 805px){
+  #fixedbar .Get{
+    display: none;
+  }
+  #fixedbar .Get~a{
+    margin: 0;
+  }
+  #fixedbar .size{
+    padding-right: 30px;
+  }
+  .fa-search{
+    display: none;
+  }
+  #casette{
+    display: none;
+  }
+  #casetta{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    height: 50%;
+  }
+  article{}
+  .quad{
+    width: 50%;
+    padding: 5%;
+  }
+  .quad:nth-child(1n+3){
+  border-top: 1px solid white;
+  }
+  .quad:nth-child(4n+2) {
+    border-right: none;
+  }
+  #results{
+    width: 100%;
+    text-align: center;
+  }
+  #startproject .hamburgermenu{
+    display: none;
+  }
+  #partners{
+    width: 100%;
+  }
+  .partnr{
+    display: block;
+  }
+  #ouroffer{
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+  }
+  #testimonial{
+    width: 100%;
+  }
+  #testimonial img{
+    margin: 5% 20%;
+    float: none;
+  }
+  footer .Hambmenu {
+    float: none;
+   }
+}
+@media only screen and (max-width: 600px){
+  #Growing_text{
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+  #casetta{
+    position:static;
+    margin: auto;
+  }
+  .feature{
+    width: 100%;
+  }
+  .feature:first-child ul li{
+    display: block;
+    margin: 0;
+  }
+  .feature:first-child{
+    text-align: center;
+  }
+  .first h6{
+    float: none;
+  }
+  .leftside{
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .first{
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  .leftside>.Get:nth-child(2){
+    display: none;
+  }
+  .Get_hidden{
+    display: block;
+  }
 }
