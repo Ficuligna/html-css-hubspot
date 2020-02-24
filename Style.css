@@ -413,7 +413,7 @@ nav>.size{
   font-weight: 200;
 }
 /* -------------Sezione  CONCEPT------------ */
-.fa-check-square{
+.fa-check-circle{
   color: #ff7a59;
   border-radius: 999px;
 }
@@ -431,6 +431,7 @@ nav>.size{
 /* #conc li:before{
   content: "";
 } */
+
 .feature p, .feature ul{
   text-align: left;
   list-style-type: none;
