@@ -301,6 +301,7 @@ nav>.size{
   /* color: #33475b; */
 }
 .new{
+  display: block;
   float: right;
 
   color: white;
