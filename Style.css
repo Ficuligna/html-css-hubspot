@@ -843,3 +843,67 @@ footer a{
     display: block;
   }
 }
+@media only screen and (max-width: 420px){
+  .size{
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  #mutendinalang{
+    display: none;
+  }
+  #Contact{
+    display: none;
+  }
+  #fixedbar i {
+    display: none;
+  }
+
+  #fixedbar .size> *:nth-child(1n+3) {
+    float: none;
+  }
+  #fixedbar .Get~a{
+    display: inline-block;
+
+  }
+  #fixedchat{
+    display: none;
+  }
+  .hamburgermenu{
+    display: none;
+  }
+  #logosup{
+    float: none;
+    margin: auto;
+  }
+  #strisciaverderdimmerda{
+    display: none;
+  }
+  #casetta{
+    height: 35%;
+  }
+  #concept>img {
+    width: 215px;
+  }
+  .feature{
+    padding:0;
+    float: none;
+  }
+  .feature:nth-child(3){
+    margin:0;
+    margin-top: 3vw;
+  }
+  .quad h2{
+    font-size: 30px;
+  }
+  .quad {
+    padding-top: 25%;
+  }
+  #testimonial img{
+    float: none;
+    width: 250px;
+    margin: auto;
+  }
+}
